@@ -16,16 +16,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    main.cpp \
     sources/collection/collectioninnovations.cpp \
+    sources/main.cpp
 
 HEADERS += \
-    sources/collection/collectioninnovations.h \
+    sources/collection/collectioninnovations.h
 
 FORMS += \
-    sources/collection/collectioninnovations.ui \
+    sources/collection/collectioninnovations.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+

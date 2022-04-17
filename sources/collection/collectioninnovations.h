@@ -3,19 +3,20 @@
 
 #include <QMainWindow>
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class CollectionInnovations; }
-QT_END_NAMESPACE
+namespace Ui {
+class CollectionInnovations;
+}
 
 class CollectionInnovations : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    CollectionInnovations(QWidget *parent = nullptr);
+    explicit CollectionInnovations(QWidget *parent = nullptr);
     ~CollectionInnovations();
 
 private:
     Ui::CollectionInnovations *ui;
 };
+
 #endif // COLLECTIONINNOVATIONS_H
